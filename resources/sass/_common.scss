@@ -1,0 +1,211 @@
+body,
+button,
+html,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+body,
+html {
+    height: 100%;
+}
+body {
+    background: $body-bg;
+    margin: 0;
+    font-weight: 400;
+    line-height: $line-height-base;
+    font-size: $font-size-base;
+    font-family: $font-family-sans-serif;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+a {
+    color: $primary-color;
+    text-decoration: none;
+    -webkit-transition: none 86ms ease-out;
+    transition: none 86ms ease-out;
+}
+a:focus,
+a:hover {
+    color: lighten($primary-color, 10%);
+}
+::-moz-selection {
+    background: darken($primary-color, 20%);
+    color: #ffffff;
+}
+::selection {
+    background: darken($primary-color, 20%);
+    color: #ffffff;
+}
+textarea {
+    resize: none;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.cursor-zoom-in {
+    cursor: zoom-in;
+}
+.cursor-zoom-out {
+    cursor: zoom-out;
+}
+.display-inline-block {
+    display: inline-block;
+}
+.display-inline {
+    display: inline;
+}
+.visibility-hidden {
+    visibility: hidden;
+}
+.display-none {
+    display: none;
+}
+.full-width {
+    max-width: 100%;
+    width: 100%;
+}
+.full-height {
+    height: 100%;
+}
+.half-width {
+    width: 50% !important;
+}
+.display-flex {
+    display: flex;
+}
+.h-primary:hover {
+    color: $primary-color !important;
+}
+.h-blue:hover {
+    color: $blue-color !important;
+}
+.h-red:hover {
+    color: $red-color !important;
+}
+.h-yellow:hover {
+    color: $yellow-color !important;
+}
+.h-green:hover {
+    color: $green-color !important;
+}
+.h-gray:hover {
+    color: $gray-color !important;
+}
+.h-black:hover {
+    color: $black-color !important;
+}
+.h-purple:hover {
+    color: $purple-color !important;
+}
+.color-primary {
+    color: $primary-color !important;
+}
+.color-blue {
+    color: $blue-color !important;
+}
+.color-red {
+    color: $red-color !important;
+}
+.color-yellow {
+    color: $yellow-color !important;
+}
+.color-green {
+    color: $green-color !important;
+}
+.color-gray {
+    color: $gray-color !important;
+}
+.color-black {
+    color: $black-color !important;
+}
+.color-purple {
+    color: $purple-color !important;
+}
+.enable-user-select {
+    user-select: text;
+}
+.disable-user-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@mixin disable-user-select() {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.margin-auto {
+    margin: auto;
+}
+.text-small {
+    font-size: 82%;
+}
+.text-bold {
+    font-weight: bold;
+}
+.h-underline:hover {
+    text-decoration: underline;
+}
+.hr-dashed {
+    border-top: 2px dashed #ccc;
+}
+.hr-thick-light {
+    border-top: 2px solid #e5e8ea;
+}
+.word-break {
+    word-break: break-all;
+}
+.no-border {
+    border: none !important;
+}
+kbd {
+    display: inline-block;
+    padding: 3px 5px;
+    font: 11px Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    line-height: 10px;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fcfcfc;
+    border: solid 1px #ccc;
+    border-bottom-color: #bbb;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #bbb;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: bold;
+}
