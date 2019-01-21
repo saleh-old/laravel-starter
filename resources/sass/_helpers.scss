@@ -202,3 +202,124 @@
         opacity: 1;
     }
 }
+.cursor-pointer {
+    cursor: pointer;
+}
+.cursor-zoom-in {
+    cursor: zoom-in;
+}
+.cursor-zoom-out {
+    cursor: zoom-out;
+}
+.display-inline-block {
+    display: inline-block;
+}
+.display-inline {
+    display: inline;
+}
+.visibility-hidden {
+    visibility: hidden;
+}
+.display-none {
+    display: none;
+}
+.full-width {
+    max-width: 100%;
+    width: 100%;
+}
+.full-height {
+    height: 100%;
+}
+.half-width {
+    width: 50% !important;
+}
+.display-flex {
+    display: flex;
+}
+.h-primary:hover {
+    color: $primary-color !important;
+}
+.h-blue:hover {
+    color: $blue-color !important;
+}
+.h-red:hover {
+    color: $red-color !important;
+}
+.h-yellow:hover {
+    color: $yellow-color !important;
+}
+.h-green:hover {
+    color: $green-color !important;
+}
+.h-gray:hover {
+    color: $gray-color !important;
+}
+.h-black:hover {
+    color: $black-color !important;
+}
+.h-purple:hover {
+    color: $purple-color !important;
+}
+.color-primary {
+    color: $primary-color !important;
+}
+.color-blue {
+    color: $blue-color !important;
+}
+.color-red {
+    color: $red-color !important;
+}
+.color-yellow {
+    color: $yellow-color !important;
+}
+.color-green {
+    color: $green-color !important;
+}
+.color-gray {
+    color: $gray-color !important;
+}
+.color-black {
+    color: $black-color !important;
+}
+.color-purple {
+    color: $purple-color !important;
+}
+.enable-user-select {
+    user-select: text;
+}
+.disable-user-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@mixin disable-user-select() {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.margin-auto {
+    margin: auto;
+}
+.text-small {
+    font-size: 82%;
+}
+.text-bold {
+    font-weight: bold;
+}
+.h-underline:hover {
+    text-decoration: underline;
+}
+.hr-dashed {
+    border-top: 2px dashed #ccc;
+}
+.hr-thick-light {
+    border-top: 2px solid #e5e8ea;
+}
+.word-break {
+    word-break: break-all;
+}
+.no-border {
+    border: none !important;
+}
