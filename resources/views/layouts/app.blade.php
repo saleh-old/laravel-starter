@@ -18,6 +18,17 @@
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
+    <!-- open graph -->
+    @section('title')
+        <title>{{ config('app.name') }}</title>
+        <meta property="og:title" content="{{ config('app.name') }}" />
+        <meta name="description" content="{{ config('app.description') }}" />
+    @show
+    <meta property="og:site_name" content="{{ config('app.name') }}" />
+    <meta property="og:image" content="{{ config('app.url') }}/img/logo-small.gif">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ url()->current() }}" />
 </head>
 <body>
     <div id="app">
