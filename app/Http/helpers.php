@@ -58,13 +58,16 @@ if (! function_exists('metaTags')) {
      *
      * @return string
      */
-    function metaTags($title, $description, $created_at = null, $updated_at = null)
+    function metaTags($title, $description = null, $created_at = null, $updated_at = null)
     {
     	$title = $title . ' - ' . config('app.name');
 
         echo "<title>{$title}</title>";
         echo '<meta property="og:title" content="' . $title . '" />';
-        echo '<meta name="description" content="' . $description . '" />';
+
+        if (isset($description)) {
+            echo '<meta name="description" content="' . $description . '" />';
+        }
 
         if (isset($created_at) && isset($updated_at)) {
             echo '<meta property="article:published_time" content="' . isoTime($created_at) . '" />';

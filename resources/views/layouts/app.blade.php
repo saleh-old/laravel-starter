@@ -20,7 +20,7 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     <!-- open graph -->
-    @section('title')
+    @section('seo-tags')
         <title>{{ config('app.name') }}</title>
         <meta property="og:title" content="{{ config('app.name') }}" />
         <meta name="description" content="{{ config('app.description') }}" />
